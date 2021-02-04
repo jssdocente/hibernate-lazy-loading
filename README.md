@@ -1,3 +1,5 @@
+### JPA e Hibernate: relaciones y atributos Lazy
+
 En JPA los atributos y relaciones que forman parte de una entidad pueden ser obtenidas desde la base de datos de dos formas distintas: en el momento en que obtengamos la entidad (EAGER) o bien bajo demanda (LAZY), esto es, la primera vez que se acceda a dichas propiedades o relaciones. Este modo LAZY es posible en Hibernate gracias al uso de objetos [proxy](https://es.wikipedia.org/wiki/Proxy_(patrón_de_diseño)) que lanzan las consultas necesarias para la obtención de ese objeto, y su objetivo final es mejorar el rendimiento evitando obtener en nuestras aplicaciones datos que realmente no necesitamos (en ocasiones incluso podríamos terminar cargando casi toda la base de datos en memoria).
 
 
